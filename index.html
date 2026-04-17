@@ -6,39 +6,79 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main>
-        <section>
-<div class="conteiner">
-    <h1 class="titulo-principal">Meu Carrinho</h1>
-    <div class="info-produto">
-        <div class="descricao-produtos">
+    
+<main>
+  <section>
+    <div class="conteiner"> <!-- serve para agrupar os elementos dentro do conteiner -->
+      <h1 class="titulo-principal">Meu carrinho</h1> <!-- titulo do carrinho -->
+      <div class="carrinho-lista"> 
 
-            <div class="img">
-            <img class="img-produto" src="img/remedio.jpg" alt="Descrição da imagem">
-            </div>
-            <div class="desc">
-            <h2 class="title-produto">Nome do Produto</h2>
-            <p class="descricao">Descrição do produto</p>
-            </div>
-
+        <div class="legenda">
+            <span>Produto</span>
+            <span>Preço</span>
+            <span>Quantidade</span>
         </div>
 
-        <button class="excluir">Excluir</button>
-        <div class="preco">R$ 99,90</div>
-        <div class="quantidade">Quantidade: 1</div>
-       
+            <div class="produto">
+                <div class="info-produto">
+                    <div class="img">
+                        <img class="img-produto" src="img/remedio.jpg" alt="Nome do Produto">
+                    </div>
+                    <div class="desc">
+                        <h2 class="titulo-produto">Nome do Produto</h2>
+                        <p class="produto-descricao">Descrição do produto</p>
+                    </div>
+                </div>
+
+                    <span class="produto-preco">R$ 00,00</span> <!-- preco do produto, span faz parte da ordem semantica -->
+
+                    <div class="produto-acoes">
+                    <div class="produto-quantidade">
+                        <button class="quantidade-btn" aria-label="Diminuir">−</button>
+                        <span class="quantidade-valor">1</span>
+                        <button class="quantidade-btn" aria-label="Aumentar">+</button>
+                    </div>
+                    <button class="btn-excluir">Excluir</button> <!-- botao para excluir o produto -->
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="info-produto">
+                    <div class="img">
+                        <img class="img-produto" src="img/remedio.jpg" alt="Nome do Produto">
+                    </div>
+                    <div class="desc">
+                        <h2 class="titulo-produto">Nome do Produto</h2>
+                        <p class="produto-descricao">Descrição do produto</p>
+                    </div>
+                </div>
+                
+                    <span class="produto-preco">R$ 00,00</span> <!-- preco do produto, span faz parte da ordem semantica -->
+
+                    <div class="produto-acoes">
+                    <div class="produto-quantidade">
+                        <button class="quantidade-btn" aria-label="Diminuir">−</button>
+                        <span class="quantidade-valor">1</span>
+                        <button class="quantidade-btn" aria-label="Aumentar">+</button>
+                    </div>
+                    <button class="btn-excluir">Excluir</button> <!-- botao para excluir o produto -->
+                </div>
+            </div>
+
+      <div class="carrinho-resumo">
+        <div class="resumo-total">
+          <span>Total</span>
+          <strong>R$ 00,00</strong> <!-- valor total do carrinho, strong para destacar o valor -->
+        </div>
+        <button class="btn btn--primario">Finalizar compra</button>
+        <button class="btn btn--secundario">Limpar carrinho</button>
+      </div>
     </div>
 
-    <div class="finalizar">
-        <div class="total">Total: R$ 99,90</div>
-        <button class="finalizar-compra">Finalizar Compra</button>
-        <button class="limpar-carrinho">Limpar Carrinho</button>
-    </div>
-</div>
-        </section>
-    </main>
+  </section>
+</main>
 
-    
 </body>
 </html>

@@ -8,8 +8,22 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
     margin: 0 20px;
+}
+
+.legenda{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: gray;
+    border-bottom: var(--background-color) 1px solid;
+}
+
+.legenda span {
+    flex: 1;
 }
 
 .conteiner{
@@ -31,45 +45,79 @@ body{
     linha 25 cria uma borda branca sólida de 1pxl em baixo do titulo*/
 }
 
-.info-produto{
+.produto{
+    margin: 5px 0;
+    padding: 5px;
     /* background-color: #319b3f; */
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--primary-color) 1px solid;
+}
+
+.info-produto{
+    /* background-color: #86c541; */
+    display: flex;
     margin: 20px;
     padding: 30px;
 }
 
-.descricao-produtos{
-    /* background-color: aquamarine; */
-    font-size: 1.5rem;
-    margin: 20px;
-    display: flex;
+.img{
+    /* background-color: rgb(206, 153, 153); */
+    border: #1e2842 1px solid;
+    border-radius: 5px ;
 }
 
 .desc{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
 }
-.img-produto{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    
+
+.titulo-produto{
+    font-size: 20px;
 }
-.title-produto{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-}
-.descricao{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+.produto-descricao{
+    font-size: 14px;
     color: gray;
 }
-.excluir{
+
+.img-produto{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    
+}
+
+.produto-preco {
+    /* background-color: aqua; */
+    flex: 1;
+    align-items: center;
+}
+
+.produto-acoes {
+    /* background-color: #769dff; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-excluir{
+    background-color: #a30229;
+    padding: 5px 0;
     width: 50%;
     border: none;
     border-radius: 50px;
-    color: violet;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-excluir:hover{
+    background-color: #da0707;
+    color: #fff;
 }
