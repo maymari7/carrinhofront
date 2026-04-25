@@ -8,9 +8,25 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
     margin: 0 20px;
 }
+
+.legenda{
+    display: flex;
+    /* background-color:var(--primary-color); */
+    border: #319b3f 2px solid;
+    justify-content: space-evenly;
+    margin: 5px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: gray;
+}
+
+/* .legenda span {
+    flex: 1;
+} */
+
 
 .conteiner{
     /* background-color: var(--text-color); */
@@ -21,6 +37,7 @@ body{
 
 .titulo-principal{
     /* color: var(--background-color); */
+    background-color: var(--text-color);
     font-size: 2.5rem;
     text-align: center;
     border-bottom: #fff solid 1px; 
@@ -31,45 +48,149 @@ body{
     linha 25 cria uma borda branca sólida de 1pxl em baixo do titulo*/
 }
 
-.info-produto{
+.produto{
+    margin: 5px 0;
+    padding: 5px;
     /* background-color: #319b3f; */
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--primary-color) 1px solid;
+}
+
+.info-produto{
+    /* background-color: #86c541; */
+    display: flex;
     margin: 20px;
     padding: 30px;
 }
 
-.descricao-produtos{
-    /* background-color: aquamarine; */
-    font-size: 1.5rem;
-    margin: 20px;
-    display: flex;
+.img{
+    /* background-color: rgb(206, 153, 153); */
+    border: #1e2842 1px solid;
+    border-radius: 5px ;
 }
 
 .desc{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
 }
-.img-produto{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    
+
+.titulo-produto{
+    font-size: 20px;
 }
-.title-produto{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-}
-.descricao{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+.produto-descricao{
+    font-size: 14px;
     color: gray;
 }
-.excluir{
-    width: 50%;
+
+.img-produto{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    
+}
+
+.produto-preco {
+    /* background-color: aqua;  */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-acoes {
+    /* background-color: #769dff; */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn-excluir{
+    background-color: #a30229;
+    padding: 5px 0;
+    width: 40%;
     border: none;
     border-radius: 50px;
-    color: violet;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-excluir:hover{
+    background-color: #da0707;
+    color: #fff;
+}
+
+.produto-quantidade{
+    /* background-color: #106a97; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade-btn{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.quantidade-btn:hover{
+    /* pseudoclasse hoover muda de cor ao passar o mouse */
+    background-color:var(--text-color);
+    cursor: pointer;
+    /* cursor pointer muda o cursor ao passar o mouse */
+}
+
+/* TOTAAAAL */
+.carrinho-resumo{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.resumo-total{
+    /* background-color: #a198d4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--background-color);
+    gap: 5px;
+}
+
+.botao-resumo{
+    /* background-color: aquamarine; */
+    padding: 20px;
+}
+
+.btn--primario {
+     background-color:var(--text-color);
+    border-radius: 50px;
+    width: 150px;
+    padding: 5px 0;
+    border: none;
+    /* border-radius arredonda a borda do botão
+    width aumenta a largura
+    padding enximento */
+}
+
+.btn--secundario {
+    /* background-color: #86c541; */
+    border-radius: 50px;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid var(--background-color);
 }
