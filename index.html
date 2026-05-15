@@ -1,87 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carrinho</title>
+  </head>
 
-<body>
-    
-<main>
-  <section>
-    <div class="conteiner"> <!-- serve para agrupar os elementos dentro do conteiner -->
-      <h1 class="titulo-principal">Meu carrinho</h1> <!-- titulo do carrinho -->
-      <div class="carrinho-lista"> 
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="img/logo.png" alt="Logo" class="logotipo" />
 
-        <div class="legenda">
-            <span>Produto</span>
-            <span>Preço</span>
-            <span>Quantidade</span>
-        </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="produto.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
 
-            <div class="produto">
-                <div class="info-produto">
-                    <div class="img">
-                        <img class="img-produto" src="img/remedio.jpg" alt="Nome do Produto">
-                    </div>
-                    <div class="desc">
-                        <h2 class="titulo-produto">Nome do Produto</h2>
-                        <p class="produto-descricao">Descrição do produto</p>
-                    </div>
-                </div>
+      <a href="login.html">
+        <img src="icons/user-solid-full.svg" alt="Login" class="icone" />
+      </a>
 
-                    <span class="produto-preco">R$ 00,00</span> <!-- preco do produto, span faz parte da ordem semantica -->
+    </header>
 
-                    <div class="produto-acoes">
-                    <div class="produto-quantidade">
-                        <button class="quantidade-btn" aria-label="Diminuir">−</button>
-                        <span class="quantidade-valor">1</span>
-                        <button class="quantidade-btn" aria-label="Aumentar">+</button>
-                    </div>
-                    <button class="btn-excluir">Excluir</button> <!-- botao para excluir o produto -->
-                </div>
+    <!-- MAIN -->
+    <main>
+      <section>
+        <div class="conteiner">
+          <!-- TÍTULO -->
+          <h1 class="titulo-principal"> <img class="icone-titulo" src="icons/cart-arrow-down-solid-full.svg" alt="">Meu carrinho</h1>
+
+          <div class="carrinho-lista">
+            <!-- LEGENDA -->
+            <div class="legenda">
+              <span>Produto</span>
+              <span>Preço</span>
+              <span>Quantidade</span>
             </div>
 
+            <!-- PRODUTO 1 -->
             <div class="produto">
-                <div class="info-produto">
-                    <div class="img">
-                        <img class="img-produto" src="img/remedio.jpg" alt="Nome do Produto">
-                    </div>
-                    <div class="desc">
-                        <h2 class="titulo-produto">Nome do Produto</h2>
-                        <p class="produto-descricao">Descrição do produto</p>
-                    </div>
+              <div class="info-produto">
+                <div class="img">
+                  <img
+                    class="img-produto"
+                    src="img/remedio.jpg"
+                    alt="Nome do Produto"
+                  />
                 </div>
-                
-                    <span class="produto-preco">R$ 00,00</span> <!-- preco do produto, span faz parte da ordem semantica -->
 
-                    <div class="produto-acoes">
-                    <div class="produto-quantidade">
-                        <button class="quantidade-btn" aria-label="Diminuir">−</button>
-                        <span class="quantidade-valor">1</span>
-                        <button class="quantidade-btn" aria-label="Aumentar">+</button>
-                    </div>
-                    <button class="btn-excluir">Excluir</button> <!-- botao para excluir o produto -->
+                <div class="desc">
+                  <h2 class="titulo-produto">Nome do Produto</h2>
+                  <p class="produto-descricao">Descrição do produto</p>
                 </div>
+              </div>
+
+              <!-- PREÇO -->
+              <span class="produto-preco">R$ 00,00</span>
+
+              <!-- AÇÕES -->
+              <div class="produto-acoes">
+                <div class="produto-quantidade">
+                  <button class="quantidade-btn" aria-label="Diminuir">
+                    −
+                  </button>
+                  <span class="quantidade-valor">1</span>
+                  <button class="quantidade-btn" aria-label="Aumentar">
+                    +
+                  </button>
+                </div>
+
+                <button class="btn-excluir">Excluir</button>
+              </div>
             </div>
 
-      <div class="carrinho-resumo">
-        <div class="resumo-total">
-          <strong>Total:</strong>
-          <strong>R$ 00,00</strong> <!-- valor total do carrinho, strong para destacar o valor -->
+            <!-- PRODUTO 2 -->
+            <div class="produto">
+              <div class="info-produto">
+                <div class="img">
+                  <img
+                    class="img-produto"
+                    src="img/remedio.jpg"
+                    alt="Nome do Produto"
+                  />
+                </div>
+
+                <div class="desc">
+                  <h2 class="titulo-produto">Nome do Produto</h2>
+                  <p class="produto-descricao">Descrição do produto</p>
+                </div>
+              </div>
+
+              <!-- PREÇO -->
+              <span class="produto-preco">R$ 00,00</span>
+
+              <!-- AÇÕES -->
+              <div class="produto-acoes">
+                <div class="produto-quantidade">
+                  <button class="quantidade-btn" aria-label="Diminuir">
+                    −
+                  </button>
+                  <span class="quantidade-valor">1</span>
+                  <button class="quantidade-btn" aria-label="Aumentar">
+                    +
+                  </button>
+                </div>
+
+                <button class="btn-excluir">Excluir</button>
+              </div>
+            </div>
+
+            <!-- RESUMO DO CARRINHO -->
+            <div class="carrinho-resumo">
+              <div class="resumo-total">
+                <strong>Total:</strong>
+                <strong>R$ 00,00</strong>
+              </div>
+
+              <div class="botao-resumo">
+                <button class="btn btn--primario">Finalizar compra</button>
+                <button class="btn btn--secundario">Limpar carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (RODAPÉ) -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contacts">
+          <img src="img/logo.png" alt="Logo" class="logotipo" />
+
+          <div class="footer-socialmidia">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="botao-resumo">
-        <button class="btn btn--primario">Finalizar compra</button>
-        <button class="btn btn--secundario">Limpar carrinho</button>
+        <!-- LISTA INSTITUCIONAL -->
+        <ul class="footer-list">
+          <li>
+            <h3>Institucional</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Sobre nós</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Nossas Bulas de A à Z</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Todas as Marcas</a>
+          </li>
+        </ul>
+
+        <!-- LISTA ATENDIMENTO -->
+        <ul class="footer-list">
+          <li>
+            <h3>Atendimento</h3>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Atendimento por Email</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">FAQ - Perguntas frequentes</a>
+          </li>
+        </ul>
+
+        <!-- FEEDBACK -->
+        <div class="footer-feedback">
+          <h3>Feedback</h3>
+          <p>
+            Deixe aqui a sua avaliação e sugestões de melhorias para nosso site.
+          </p>
+
+          <div class="input-group">
+            <input type="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-  </section>
-</main>
-
-</body>
+      <!-- COPYRIGHT -->
+      <div class="footer-copyright">
+        &#169 FarmaSync 2026
+        <br />
+        Consulte sempre um médico antes de usar qualquer medicamento.
+      </div>
+    </footer>
+  </body>
 </html>
